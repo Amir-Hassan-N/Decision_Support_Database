@@ -1,0 +1,112 @@
+
+// *******************  Most Frequent Crash Cause by all and Specific Year ******************************//
+
+//WITH 
+//-- Calculate Weighted Crash Count
+//MEMBER [Measures].[WeightedCauseCount] AS 
+//    ([Measures].[Primary Cause Count] * 2) + [Measures].[Secondary Cause Count]
+//
+//-- Get the Maximum Weighted Cause Count for Each Year
+//MEMBER [Measures].[MaxWeightedCauseCount] AS
+//    MAX(
+//        EXISTS(
+//            [Dim Cause].[Cause Description].MEMBERS,
+//            [Dim Date].[Year].CURRENTMEMBER
+//        ),
+//        [Measures].[WeightedCauseCount]
+//    )
+//
+//-- Get the Cause with the Max Weighted Count
+//MEMBER [Measures].[MostFrequentCause] AS
+//    HEAD(
+//        FILTER(
+//            EXISTS(
+//                [Dim Cause].[Cause Description].MEMBERS,
+//                [Dim Date].[Year].CURRENTMEMBER
+//            ),
+//            [Measures].[WeightedCauseCount] = [Measures].[MaxWeightedCauseCount]
+//        )
+//    ).ITEM(0).NAME
+//
+//
+//	SELECT 
+//    {[Measures].[WeightedCauseCount]} ON COLUMNS,
+//    FILTER(
+//        [Dim Cause].[Cause Description].MEMBERS,
+//        [Measures].[WeightedCauseCount] > 0
+//    ) ON ROWS
+//FROM [Cube]
+//WHERE ([Dim Date].[Year])
+//-- WHERE ([Dim Date].[Year].&[2015]) --  For a specific year
+
+
+
+
+// *******************   MDX Query for Per-Year Analysis  ****************************//
+
+//WITH 
+//-- CALCULATE WEIGHTED CRASH COUNT
+//MEMBER [MEASURES].[WEIGHTEDCAUSECOUNT] AS 
+//    ([MEASURES].[PRIMARY CAUSE COUNT] * 2) + [MEASURES].[SECONDARY CAUSE COUNT]
+//
+//-- GET THE MAXIMUM WEIGHTED CAUSE COUNT FOR EACH YEAR
+//MEMBER [MEASURES].[MAXWEIGHTEDCAUSECOUNT] AS
+//    MAX(
+//        {[DIM CAUSE].[CAUSE DESCRIPTION].MEMBERS},
+//        [MEASURES].[WEIGHTEDCAUSECOUNT]
+//    )
+//
+//-- GET THE CAUSE WITH THE MAX WEIGHTED COUNT
+//MEMBER [MEASURES].[MOSTFREQUENTCAUSE] AS
+//    HEAD(
+//        FILTER(
+//            {[DIM CAUSE].[CAUSE DESCRIPTION].MEMBERS},
+//            [MEASURES].[WEIGHTEDCAUSECOUNT] = [MEASURES].[MAXWEIGHTEDCAUSECOUNT]
+//        )
+//    ).ITEM(0).NAME
+//
+//SELECT 
+//{
+//    [MEASURES].[MOSTFREQUENTCAUSE], 
+//    [MEASURES].[WEIGHTEDCAUSECOUNT], 
+//    [MEASURES].[DAMAGE AMOUNT]
+//} ON COLUMNS,
+//[DIM DATE].[YEAR].MEMBERS ON ROWS
+//FROM [CUBE]
+
+
+
+// ************************** MDX Query for Overall Analysis Across All Years   ****************************//
+
+//WITH 
+//-- Calculate Weighted Crash Count
+//MEMBER [Measures].[WeightedCauseCount] AS 
+//    ([Measures].[Primary Cause Count] * 2) + [Measures].[Secondary Cause Count]
+//
+//-- Get the Maximum Weighted Cause Count Across All Years
+//MEMBER [Measures].[MaxOverallCauseCount] AS
+//    MAX(
+//        {[Dim Cause].[Cause Description].MEMBERS},
+//        [Measures].[WeightedCauseCount]
+//    )
+//
+//-- Get the Overall Most Frequent Cause
+//MEMBER [Measures].[OverallMostFrequentCause] AS
+//    HEAD(
+//        FILTER(
+//            {[Dim Cause].[Cause Description].MEMBERS},
+//            [Measures].[WeightedCauseCount] = [Measures].[MaxOverallCauseCount]
+//        )
+//    ).ITEM(0).NAME
+//
+//SELECT 
+//{
+//    [Measures].[OverallMostFrequentCause], 
+//    [Measures].[MaxOverallCauseCount]
+//} ON COLUMNS
+//FROM [Cube]
+
+
+
+
+

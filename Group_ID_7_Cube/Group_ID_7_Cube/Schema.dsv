@@ -1,0 +1,611 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e09651a5-b366-4e4a-8b4d-9ccf9003cfe8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Schema</ID>
+  <Name>Schema</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10852" scrolltop="112" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="82" x="27750" y="15939" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCause" left="8667" top="15921" logicalid="16" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1588" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00000e0e000034060000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimCause" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCrash" left="11891" top="11214" logicalid="17" controlid="2" masterid="0" hint1="0" hint2="0" width="4128" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00002010000003090000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimCrash" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="11891" top="5427" logicalid="18" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3387" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00003b0d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimDate" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimGeography" left="3201" top="0" logicalid="19" controlid="4" masterid="0" hint1="0" hint2="0" width="3027" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000d30b0000d30b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimGeography" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimPerson" left="8628" top="360" logicalid="20" controlid="5" masterid="0" hint1="0" hint2="0" width="3704" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000780e00006b0a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimPerson" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimVehicle" left="3267" top="15921" logicalid="21" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000d30b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimVehicle" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimWeather" left="0" top="8500" logicalid="22" controlid="7" masterid="0" hint1="0" hint2="0" width="3641" height="1947" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000390e00009b070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_DimWeather" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactCrash" left="6041" top="6974" logicalid="23" controlid="8" masterid="0" hint1="0" hint2="0" width="3450" height="5258" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00007a0d00008a140000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="Group_ID_7_FactCrash" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8016" top="2528" logicalid="24" controlid="9" masterid="0" hint1="0" hint2="0" width="2864" height="4746" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Perso__51300E55]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="8" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="10480" y="3027" />
+                    <point x="10480" y="5000" />
+                    <point x="8316" y="5000" />
+                    <point x="8316" y="6974" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8016" top="11932" logicalid="25" controlid="10" masterid="0" hint1="0" hint2="0" width="2850" height="4489" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Cause__4D5F7D71]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="8" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="10466" y="15921" />
+                    <point x="10466" y="13948" />
+                    <point x="8316" y="13948" />
+                    <point x="8316" y="12232" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4315" top="2528" logicalid="26" controlid="11" masterid="0" hint1="0" hint2="0" width="2651" height="4746" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Geogr__503BEA1C]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="8" sourceattachpoint="5" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="4714" y="3027" />
+                    <point x="4714" y="5000" />
+                    <point x="6666" y="5000" />
+                    <point x="6666" y="6974" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3341" top="9074" logicalid="27" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="829" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Weath__2DE6D218]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="17" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3641" y="9473" />
+                    <point x="4841" y="9473" />
+                    <point x="4841" y="9603" />
+                    <point x="6041" y="9603" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9191" top="6721" logicalid="28" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="2082" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Date___4F47C5E3]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="8" sourceattachpoint="14" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11891" y="7120" />
+                    <point x="10691" y="7120" />
+                    <point x="10691" y="8503" />
+                    <point x="9491" y="8503" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4368" top="11932" logicalid="29" controlid="14" masterid="0" hint1="0" hint2="0" width="2598" height="4489" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Vehic__5224328E]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="8" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="4767" y="15921" />
+                    <point x="4767" y="13948" />
+                    <point x="6666" y="13948" />
+                    <point x="6666" y="12232" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9191" top="9853" logicalid="30" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="2914" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__FactCrash__Crash__4E53A1AA]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="8" sourceattachpoint="16" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11891" y="12367" />
+                    <point x="10691" y="12367" />
+                    <point x="10691" y="10153" />
+                    <point x="9491" y="10153" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-10852</DiagramViewPortLeft>
+            <DiagramViewPortTop>112</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>82</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Group ID 7 DB</DataSourceID>
+  <Schema>
+    <xs:schema id="Schema" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Schema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3eb9dec4-69d5-4b18-bdd1-6cf366e34a55">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Group_ID_7_DimCause" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="27812c20-dc2b-401d-80ca-d206a0601673" msprop:FriendlyName="DimCause" msprop:TableType="Table" msprop:DbTableName="DimCause">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Cause_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Cause_ID" msprop:DbColumnName="Cause_ID" msprop:design-time-name="a16ce2a5-a0a8-4272-ac16-2d7fbb719652" type="xs:int" />
+                  <xs:element name="Cause_Description" msprop:FriendlyName="Cause_Description" msprop:DbColumnName="Cause_Description" msprop:design-time-name="969698b9-6592-4b1b-88f8-080c6a1db8fe" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_DimCrash" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="8180ea50-b84d-4a93-9d37-8ec32d8a7e13" msprop:FriendlyName="DimCrash" msprop:TableType="Table" msprop:DbTableName="DimCrash">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Crash_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Crash_ID" msprop:DbColumnName="Crash_ID" msprop:design-time-name="57488a37-4bec-4a22-b2f1-5e66bff1cf73" type="xs:int" />
+                  <xs:element name="Crash_Type" msprop:FriendlyName="Crash_Type" msprop:DbColumnName="Crash_Type" msprop:design-time-name="e03beea7-3a8a-4a84-9bb6-31fa232d45ac" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Traffic_Control_Device" msprop:FriendlyName="Traffic_Control_Device" msprop:DbColumnName="Traffic_Control_Device" msprop:design-time-name="28b24d6e-ce3a-490a-bac9-c9d1b43a1c17" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lighting_Condition" msprop:FriendlyName="Lighting_Condition" msprop:DbColumnName="Lighting_Condition" msprop:design-time-name="caa7ba81-8484-4020-af2a-e2d7ef3b2cc0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_DimDate" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="8d173fc8-2271-4789-a305-86a74c968193" msprop:FriendlyName="DimDate" msprop:TableType="Table" msprop:DbTableName="DimDate">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Date_ID" msprop:DbColumnName="Date_ID" msprop:design-time-name="05b6b401-8fd9-4770-a8b8-7dc8817ad8f2" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="0cb029b5-20c6-4a09-9d0a-849a3bb56a61">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="7a1cf18a-d0b4-4265-bfe1-20d925bf0661" type="xs:int" />
+                  <xs:element name="Quarter" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:design-time-name="6113a883-0148-49be-9f75-445f84717784" type="xs:int" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="f444f2d0-58eb-4595-ab54-cb25010de709" type="xs:int" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="6ce54ea8-9ccd-4733-a6f4-5b714beadcbb" type="xs:int" />
+                  <xs:element name="Time_of_Day" msprop:FriendlyName="Time_of_Day" msprop:DbColumnName="Time_of_Day" msprop:design-time-name="fd727cd1-b02f-4d82-b2b4-c8294e2058e6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="16" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Combined_Date" msdata:ReadOnly="true" msprop:DbColumnName="Combined_Date" msprop:IsLogical="True" msprop:ComputedColumnExpression="CAST(Year AS VARCHAR) + '-Q' + CAST(Quarter AS VARCHAR) + '-M' + &#xD;&#xA;RIGHT('0' + CAST(Month AS VARCHAR), 2) + '-D' + &#xD;&#xA;RIGHT('0' + CAST(Day AS VARCHAR), 2)" msprop:design-time-name="fccb4097-8186-4148-930e-cc981642e0ef" msprop:Description="Concatinate Year-Quarter-Month-Day for Hierarchies usage as Combined_Date" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="70" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_DimGeography" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="c11db9b6-f1e8-4ec9-a89c-68876148fa3c" msprop:FriendlyName="DimGeography" msprop:TableType="Table" msprop:DbTableName="DimGeography">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Geography_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Geography_ID" msprop:DbColumnName="Geography_ID" msprop:design-time-name="120745f0-eb67-46e6-9ef4-9abf2d3025b0" type="xs:int" />
+                  <xs:element name="Police_Beat" msprop:FriendlyName="Police_Beat" msprop:DbColumnName="Police_Beat" msprop:design-time-name="4b0bf80d-8a73-4754-9ec2-2d703c8b2088" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="City" msprop:FriendlyName="City" msprop:DbColumnName="City" msprop:design-time-name="e410dad6-bd62-41cb-b01a-c9cb1578b310" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="State" msprop:FriendlyName="State" msprop:DbColumnName="State" msprop:design-time-name="4aae9840-3513-46fd-a853-b43649d09833" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Latitude" msprop:FriendlyName="Latitude" msprop:DbColumnName="Latitude" msprop:design-time-name="17b4f777-082a-480b-ad84-3659df9ae5ac" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Longitude" msprop:FriendlyName="Longitude" msprop:DbColumnName="Longitude" msprop:design-time-name="2c1b755d-2d7e-4ac1-b6f2-247998620c5c" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Zip_Code" msdata:ReadOnly="true" msprop:DbColumnName="Zip_Code" msprop:IsLogical="True" msprop:ComputedColumnExpression="CASE &#xD;&#xA;    WHEN City = 'CHICAGO' THEN '60601'&#xD;&#xA;    WHEN City = 'CICERO' THEN '60804'&#xD;&#xA;    WHEN City = 'SKOKIE' THEN '60076'&#xD;&#xA;    WHEN City = 'BERWYN' THEN '60402'&#xD;&#xA;    WHEN City = 'EVANSTON' THEN '60201'&#xD;&#xA;    WHEN City = 'CALUMET CITY' THEN '60409'&#xD;&#xA;    WHEN City = 'OAK LAWN' THEN '60453'&#xD;&#xA;    WHEN City = 'UNKNOWN' THEN NULL&#xD;&#xA;    WHEN City = 'OAK PARK' THEN '60302'&#xD;&#xA;    WHEN City = 'DES PLAINES' THEN '60016'&#xD;&#xA;    WHEN City = 'DOLTON' THEN '60419'&#xD;&#xA;    WHEN City = 'ELMWOOD PARK' THEN '60707'&#xD;&#xA;    WHEN City = 'SOUTH HOLLAND' THEN '60473'&#xD;&#xA;    WHEN City = 'MAYWOOD' THEN '60153'&#xD;&#xA;    WHEN City = 'BURBANK' THEN '60459'&#xD;&#xA;    WHEN City = 'AURORA' THEN '60502'&#xD;&#xA;    WHEN City = 'NAPERVILLE' THEN '60540'&#xD;&#xA;    WHEN City = 'EVERGREEN PARK' THEN '60805'&#xD;&#xA;    WHEN City = 'BLUE ISLAND' THEN '60406'&#xD;&#xA;    WHEN City = 'LANSING' THEN '60438'&#xD;&#xA;    WHEN City = 'BELLWOOD' THEN '60104'&#xD;&#xA;    WHEN City = 'BOLINGBROOK' THEN '60440'&#xD;&#xA;    WHEN City = 'GLENVIEW' THEN '60025'&#xD;&#xA;    WHEN City = 'HAMMOND' THEN '46320'&#xD;&#xA;    WHEN City = 'NILES' THEN '60714'&#xD;&#xA;    WHEN City = 'ORLAND PARK' THEN '60462'&#xD;&#xA;    WHEN City = 'MELROSE PARK' THEN '60160'&#xD;&#xA;    WHEN City = 'RIVERDALE' THEN '60827'&#xD;&#xA;    WHEN City = 'JOLIET' THEN '60431'&#xD;&#xA;    WHEN City = 'PLAINFIELD' THEN '60544'&#xD;&#xA;    WHEN City = 'HARVEY' THEN '60426'&#xD;&#xA;    WHEN City = 'PARK RIDGE' THEN '60068'&#xD;&#xA;    WHEN City = 'ALSIP' THEN '60803'&#xD;&#xA;    WHEN City = 'MATTESON' THEN '60443'&#xD;&#xA;    WHEN City = 'TINLEY PARK' THEN '60477'&#xD;&#xA;    WHEN City = 'CHCIAGO' THEN '60602'&#xD;&#xA;    WHEN City = 'MORTON GROVE' THEN '60053'&#xD;&#xA;    WHEN City = 'LINCOLNWOOD' THEN '60712'&#xD;&#xA;    WHEN City = 'COUNTRY CLUB HILLS' THEN '60478'&#xD;&#xA;    WHEN City = 'ELGIN' THEN '60120'&#xD;&#xA;    WHEN City = 'SCHAUMBURG' THEN '60193'&#xD;&#xA;    WHEN City = 'NORRIDGE' THEN '60706'&#xD;&#xA;    WHEN City = 'ARLINGTON HEIGHTS' THEN '60004'&#xD;&#xA;    WHEN City = 'MOUNT PROSPECT' THEN '60056'&#xD;&#xA;    WHEN City = 'BRIDGEVIEW' THEN '60455'&#xD;&#xA;    WHEN City = 'CHICAGO RIDGE' THEN '60415'&#xD;&#xA;    WHEN City = 'CHGO' THEN '60603'&#xD;&#xA;    WHEN City = 'GARY' THEN '46402'&#xD;&#xA;    WHEN City = 'LOMBARD' THEN '60148'&#xD;&#xA;    WHEN City = 'PALATINE' THEN '60067'&#xD;&#xA;    WHEN City = 'HAZEL CREST' THEN '60429'&#xD;&#xA;    WHEN City = 'JUSTICE' THEN '60458'&#xD;&#xA;    WHEN City = 'FOREST PARK' THEN '60130'&#xD;&#xA;    WHEN City = 'CALUMET PARK' THEN '60827'&#xD;&#xA;    WHEN City = 'PARK FOREST' THEN '60466'&#xD;&#xA;    WHEN City = 'ROMEOVILLE' THEN '60446'&#xD;&#xA;    WHEN City = 'RIVER GROVE' THEN '60171'&#xD;&#xA;    WHEN City = 'NORTHBROOK' THEN '60062'&#xD;&#xA;    WHEN City = 'FRANKLIN PARK' THEN '60131'&#xD;&#xA;    WHEN City = 'MARKHAM' THEN '60428'&#xD;&#xA;    WHEN City = 'HOFFMAN ESTATES' THEN '60169'&#xD;&#xA;    WHEN City = 'HOMEWOOD' THEN '60430'&#xD;&#xA;    WHEN City = 'ADDISON' THEN '60101'&#xD;&#xA;    WHEN City = 'OAK FOREST' THEN '60452'&#xD;&#xA;    WHEN City = 'UNK' THEN NULL&#xD;&#xA;    WHEN City = 'WAUKEGAN' THEN '60085'&#xD;&#xA;    WHEN City = 'CHICAGO HEIGHTS' THEN '60411'&#xD;&#xA;    WHEN City = 'RICHTON PARK' THEN '60471'&#xD;&#xA;    WHEN City = 'WILMETTE' THEN '60091'&#xD;&#xA;    WHEN City = 'LYNWOOD' THEN '60411'&#xD;&#xA;    WHEN City = 'PALOS HILLS' THEN '60465'&#xD;&#xA;    WHEN City = 'ELMHURST' THEN '60126'&#xD;&#xA;    WHEN City = 'DOWNERS GROVE' THEN '60515'&#xD;&#xA;    WHEN City = 'BROADVIEW' THEN '60155'&#xD;&#xA;    WHEN City = 'HARWOOD HEIGHTS' THEN '60706'&#xD;&#xA;    WHEN City = 'SCHILLER PARK' THEN '60176'&#xD;&#xA;    WHEN City = 'SUMMIT' THEN '60501'&#xD;&#xA;    WHEN City = 'WESTCHESTER' THEN '60154'&#xD;&#xA;    WHEN City = 'HANOVER PARK' THEN '60133'&#xD;&#xA;    WHEN City = 'BROOKFIELD' THEN '60513'&#xD;&#xA;    WHEN City = 'WHEELING' THEN '60090'&#xD;&#xA;    -- Else put the most repeated state zip code  --&#xD;&#xA;    ELSE '60001'&#xD;&#xA;END" msprop:design-time-name="060cd5f2-3aef-4944-a57d-d231cbdfe97a" msprop:Description="Zip_Code According to City" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Street_Name" msdata:ReadOnly="true" msprop:DbColumnName="Street_Name" msprop:IsLogical="True" msprop:ComputedColumnExpression="CASE &#xD;&#xA;    WHEN City = 'CHICAGO' THEN 'Michigan Avenue'&#xD;&#xA;    WHEN City = 'CICERO' THEN 'Cicero Avenue'&#xD;&#xA;    WHEN City = 'SKOKIE' THEN 'Skokie Boulevard'&#xD;&#xA;    WHEN City = 'BERWYN' THEN 'Cermak Road'&#xD;&#xA;    WHEN City = 'EVANSTON' THEN 'Chicago Avenue'&#xD;&#xA;    WHEN City = 'CALUMET CITY' THEN 'Sibley Boulevard'&#xD;&#xA;    WHEN City = 'OAK LAWN' THEN 'Harlem Avenue'&#xD;&#xA;    WHEN City = 'UNKNOWN' THEN NULL&#xD;&#xA;    WHEN City = 'OAK PARK' THEN 'Lake Street'&#xD;&#xA;    WHEN City = 'DES PLAINES' THEN 'River Road'&#xD;&#xA;    WHEN City = 'DOLTON' THEN 'Sibley Boulevard'&#xD;&#xA;    WHEN City = 'ELMWOOD PARK' THEN 'Armitage Avenue'&#xD;&#xA;    WHEN City = 'SOUTH HOLLAND' THEN '159th Street'&#xD;&#xA;    WHEN City = 'MAYWOOD' THEN 'Madison Street'&#xD;&#xA;    WHEN City = 'BURBANK' THEN 'Harlem Avenue'&#xD;&#xA;    WHEN City = 'AURORA' THEN 'New York Street'&#xD;&#xA;    WHEN City = 'NAPERVILLE' THEN 'Washington Street'&#xD;&#xA;    WHEN City = 'EVERGREEN PARK' THEN '99th Street'&#xD;&#xA;    WHEN City = 'BLUE ISLAND' THEN 'Western Avenue'&#xD;&#xA;    WHEN City = 'LANSING' THEN 'Ridge Road'&#xD;&#xA;    WHEN City = 'BELLWOOD' THEN 'Cermak Road'&#xD;&#xA;    WHEN City = 'BOLINGBROOK' THEN 'Boughton Road'&#xD;&#xA;    WHEN City = 'GLENVIEW' THEN 'Waukegan Road'&#xD;&#xA;    WHEN City = 'HAMMOND' THEN 'Indianapolis Boulevard'&#xD;&#xA;    WHEN City = 'NILES' THEN 'Dempster Street'&#xD;&#xA;    WHEN City = 'ORLAND PARK' THEN '159th Street'&#xD;&#xA;    WHEN City = 'MELROSE PARK' THEN 'Lake Street'&#xD;&#xA;    WHEN City = 'RIVERDALE' THEN '118th Street'&#xD;&#xA;    WHEN City = 'JOLIET' THEN 'Larkin Avenue'&#xD;&#xA;    WHEN City = 'PLAINFIELD' THEN 'Lockport Street'&#xD;&#xA;    WHEN City = 'HARVEY' THEN 'Halsted Street'&#xD;&#xA;    WHEN City = 'PARK RIDGE' THEN 'Dempster Street'&#xD;&#xA;    WHEN City = 'ALSIP' THEN 'Pulaski Road'&#xD;&#xA;    WHEN City = 'MATTESON' THEN 'Lincoln Highway'&#xD;&#xA;    WHEN City = 'TINLEY PARK' THEN 'Oak Park Avenue'&#xD;&#xA;    WHEN City = 'CHCIAGO' THEN 'State Street'&#xD;&#xA;    WHEN City = 'MORTON GROVE' THEN 'Waukegan Road'&#xD;&#xA;    WHEN City = 'LINCOLNWOOD' THEN 'Lincoln Avenue'&#xD;&#xA;    WHEN City = 'COUNTRY CLUB HILLS' THEN '138th Street'&#xD;&#xA;    WHEN City = 'ELGIN' THEN 'Chicago Street'&#xD;&#xA;    WHEN City = 'SCHAUMBURG' THEN 'Schaumburg Road'&#xD;&#xA;    WHEN City = 'NORRIDGE' THEN 'Cicero Avenue'&#xD;&#xA;    WHEN City = 'ARLINGTON HEIGHTS' THEN 'Arlington Heights Road'&#xD;&#xA;    WHEN City = 'MOUNT PROSPECT' THEN 'Rand Road'&#xD;&#xA;    WHEN City = 'BRIDGEVIEW' THEN '95th Street'&#xD;&#xA;    WHEN City = 'CHICAGO RIDGE' THEN 'Harlem Avenue'&#xD;&#xA;    WHEN City = 'CHGO' THEN 'State Street'&#xD;&#xA;    WHEN City = 'GARY' THEN 'Broadway'&#xD;&#xA;    WHEN City = 'LOMBARD' THEN 'Main Street'&#xD;&#xA;    WHEN City = 'PALATINE' THEN 'North Quentin Road'&#xD;&#xA;    WHEN City = 'HAZEL CREST' THEN 'Halsted Street'&#xD;&#xA;    WHEN City = 'JUSTICE' THEN 'Cermak Road'&#xD;&#xA;    WHEN City = 'FOREST PARK' THEN 'Desplaines Avenue'&#xD;&#xA;    WHEN City = 'CALUMET PARK' THEN 'State Street'&#xD;&#xA;    WHEN City = 'PARK FOREST' THEN 'Western Avenue'&#xD;&#xA;    WHEN City = 'ROMEOVILLE' THEN 'Romeoville Road'&#xD;&#xA;    WHEN City = 'RIVER GROVE' THEN 'Grand Avenue'&#xD;&#xA;    WHEN City = 'NORTHBROOK' THEN 'Waukegan Road'&#xD;&#xA;        WHEN City = 'FRANKLIN PARK' THEN 'Franklin Avenue'&#xD;&#xA;    WHEN City = 'MARKHAM' THEN '159th Street'&#xD;&#xA;    WHEN City = 'HOFFMAN ESTATES' THEN 'Golf Road'&#xD;&#xA;    WHEN City = 'HOMEWOOD' THEN 'Ridge Road'&#xD;&#xA;    WHEN City = 'ADDISON' THEN 'Lake Street'&#xD;&#xA;    WHEN City = 'OAK FOREST' THEN '159th Street'&#xD;&#xA;    WHEN City = 'UNK' THEN NULL&#xD;&#xA;    WHEN City = 'WAUKEGAN' THEN 'Sheridan Road'&#xD;&#xA;    WHEN City = 'CHICAGO HEIGHTS' THEN 'Halsted Street'&#xD;&#xA;    WHEN City = 'RICHTON PARK' THEN 'Kedzie Avenue'&#xD;&#xA;    WHEN City = 'WILMETTE' THEN 'Green Bay Road'&#xD;&#xA;    WHEN City = 'LYNWOOD' THEN '159th Street'&#xD;&#xA;    WHEN City = 'PALOS HILLS' THEN '79th Street'&#xD;&#xA;    WHEN City = 'ELMHURST' THEN 'York Street'&#xD;&#xA;    WHEN City = 'DOWNERS GROVE' THEN 'Main Street'&#xD;&#xA;    WHEN City = 'BROADVIEW' THEN 'Cermak Road'&#xD;&#xA;    WHEN City = 'HARWOOD HEIGHTS' THEN 'Harlem Avenue'&#xD;&#xA;    WHEN City = 'SCHILLER PARK' THEN 'River Road'&#xD;&#xA;    WHEN City = 'SUMMIT' THEN 'Summit Avenue'&#xD;&#xA;    WHEN City = 'WESTCHESTER' THEN 'Roosevelt Road'&#xD;&#xA;    WHEN City = 'HANOVER PARK' THEN 'Barrington Road'&#xD;&#xA;    WHEN City = 'BROOKFIELD' THEN 'Ogden Avenue'&#xD;&#xA;    WHEN City = 'WHEELING' THEN 'Lake Cook Road'&#xD;&#xA;    ELSE 'Main St'&#xD;&#xA;END" msprop:design-time-name="d37253a6-0a37-4dd1-bab7-1a7ad8f20f6e" msprop:Description="By using OpenStreetMap API (Nominatim) and open Datasets I fetched Street Name as I have City, State, Latitude and Longitude and Zip Code.&#xD;&#xA;In else I put most common street name of USA." minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="22" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Street_Type" msdata:ReadOnly="true" msprop:DbColumnName="Street_Type" msprop:IsLogical="True" msprop:ComputedColumnExpression="CASE&#xD;&#xA;    WHEN City = 'CHICAGO' THEN 'Avenue'&#xD;&#xA;    WHEN City = 'CICERO' THEN 'Boulevard'&#xD;&#xA;    WHEN City = 'SKOKIE' THEN 'Road'&#xD;&#xA;    WHEN City = 'BERWYN' THEN 'Street'&#xD;&#xA;    WHEN City = 'EVANSTON' THEN 'Lane'&#xD;&#xA;    WHEN City = 'CALUMET CITY' THEN 'Drive'&#xD;&#xA;    WHEN City = 'OAK LAWN' THEN 'Terrace'&#xD;&#xA;    WHEN City = 'OAK PARK' THEN 'Place'&#xD;&#xA;    WHEN City = 'DES PLAINES' THEN 'Court'&#xD;&#xA;    WHEN City = 'DOLTON' THEN 'Circle'&#xD;&#xA;    WHEN City = 'ELMWOOD PARK' THEN 'Way'&#xD;&#xA;    WHEN City = 'SOUTH HOLLAND' THEN 'Parkway'&#xD;&#xA;    WHEN City = 'MAYWOOD' THEN 'Trail'&#xD;&#xA;    -- Added common street type&#xD;&#xA;    ELSE 'Road'&#xD;&#xA;END" msprop:design-time-name="b0116b8f-bc95-430e-840c-c0be4a914c57" msprop:Description="Base on street name, I calculated street type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Intersection" msdata:ReadOnly="true" msprop:DbColumnName="Intersection" msprop:IsLogical="True" msprop:design-time-name="dd7662b9-ccf1-4e1c-bea6-cb617744ed11" msprop:Description="Intersection is combination of Street name and street type. I performed concatination on it. &#xD;&#xA;Street_Name + ' &amp; ' + Street_Type" msprop:ComputedColumnExpression="CASE&#xD;&#xA;    WHEN City = 'CHICAGO' THEN 'State St &amp; Madison St'&#xD;&#xA;    WHEN City = 'CICERO' THEN 'Cermak Rd &amp; Cicero Ave'&#xD;&#xA;    WHEN City = 'SKOKIE' THEN 'Dempster St &amp; Skokie Blvd'&#xD;&#xA;    WHEN City = 'BERWYN' THEN 'Ogden Ave &amp; Harlem Ave'&#xD;&#xA;    WHEN City = 'EVANSTON' THEN 'Chicago Ave &amp; Main St'&#xD;&#xA;    WHEN City = 'CALUMET CITY' THEN 'Sibley Blvd &amp; Torrence Ave'&#xD;&#xA;    WHEN City = 'OAK LAWN' THEN '95th St &amp; Cicero Ave'&#xD;&#xA;    WHEN City = 'OAK PARK' THEN 'Lake St &amp; Oak Park Ave'&#xD;&#xA;    WHEN City = 'DES PLAINES' THEN 'Miner St &amp; Lee St'&#xD;&#xA;    WHEN City = 'DOLTON' THEN 'Sibley Blvd &amp; Lincoln Ave'&#xD;&#xA;    WHEN City = 'SCHAUMBURG' THEN 'Golf Rd &amp; Meacham Rd'&#xD;&#xA;    WHEN City = 'NAPERVILLE' THEN 'Washington St &amp; Ogden Ave'&#xD;&#xA;    WHEN City = 'AURORA' THEN 'Galena Blvd &amp; Broadway St'&#xD;&#xA;    WHEN City = 'TINLEY PARK' THEN 'Harlem Ave &amp; 159th St'&#xD;&#xA;    WHEN City = 'OAK FOREST' THEN 'Central Ave &amp; 159th St'&#xD;&#xA;    WHEN City = 'JOLIET' THEN 'Jefferson St &amp; Larkin Ave'&#xD;&#xA;    WHEN City = 'PLAINFIELD' THEN 'Division St &amp; Lockport St'&#xD;&#xA;    WHEN City = 'ELGIN' THEN 'Kimball St &amp; Grove Ave'&#xD;&#xA;    WHEN City = 'ARLINGTON HEIGHTS' THEN 'Dundee Rd &amp; Arlington Heights Rd'&#xD;&#xA;    WHEN City = 'PALATINE' THEN 'Palatine Rd &amp; Northwest Hwy'&#xD;&#xA;    WHEN City = 'WILMETTE' THEN 'Green Bay Rd &amp; Lake Ave'&#xD;&#xA;    WHEN City = 'EVANSTON' THEN 'Sheridan Rd &amp; Clark St'&#xD;&#xA;    WHEN City = 'GLENVIEW' THEN 'Waukegan Rd &amp; Glenview Rd'&#xD;&#xA;    WHEN City = 'HINSDALE' THEN 'Ogden Ave &amp; York Rd'&#xD;&#xA;    WHEN City = 'ELMHURST' THEN 'York St &amp; North Ave'&#xD;&#xA;    WHEN City = 'MORTON GROVE' THEN 'Dempster St &amp; Waukegan Rd'&#xD;&#xA;    WHEN City = 'BUFFALO GROVE' THEN 'Lake Cook Rd &amp; Buffalo Grove Rd'&#xD;&#xA;    WHEN City = 'ROLLING MEADOWS' THEN 'Kirchoff Rd &amp; Hicks Rd'&#xD;&#xA;    WHEN City = 'NORTHBROOK' THEN 'Shermer Rd &amp; Dundee Rd'&#xD;&#xA;    WHEN City = 'LINCOLNWOOD' THEN 'Touhy Ave &amp; Lincoln Ave'&#xD;&#xA;    WHEN City = 'MOUNT PROSPECT' THEN 'Elmhurst Rd &amp; Rand Rd'&#xD;&#xA;    WHEN City = 'DES PLAINES' THEN 'River Rd &amp; Oakton St'&#xD;&#xA;    WHEN City = 'BROOKFIELD' THEN 'Ogden Ave &amp; Prairie Ave'&#xD;&#xA;    WHEN City = 'FOREST PARK' THEN 'Madison St &amp; Harlem Ave'&#xD;&#xA;    WHEN City = 'RIVER FOREST' THEN 'Lake St &amp; Harlem Ave'&#xD;&#xA;    WHEN City = 'OAK BROOK' THEN '22nd St &amp; Midwest Rd'&#xD;&#xA;    WHEN City = 'LOMBARD' THEN 'Roosevelt Rd &amp; Main St'&#xD;&#xA;    WHEN City = 'DOWNERS GROVE' THEN 'Ogden Ave &amp; Main St'&#xD;&#xA;    WHEN City = 'GLENDALE HEIGHTS' THEN 'North Ave &amp; Bloomingdale Rd'&#xD;&#xA;    WHEN City = 'CAROL STREAM' THEN 'Geneva Rd &amp; Schmale Rd'&#xD;&#xA;    WHEN City = 'BLOOMINGDALE' THEN 'Lake St &amp; Bloomingdale Rd'&#xD;&#xA;    WHEN City = 'WHEATON' THEN 'Main St &amp; Roosevelt Rd'&#xD;&#xA;    WHEN City = 'WARRENVILLE' THEN 'Batavia Rd &amp; Warrenville Rd'&#xD;&#xA;    WHEN City = 'BATAVIA' THEN 'Wilson St &amp; Batavia Ave'&#xD;&#xA;    WHEN City = 'GENEVA' THEN 'State St &amp; 3rd St'&#xD;&#xA;    WHEN City = 'ST. CHARLES' THEN 'Main St &amp; Randall Rd'&#xD;&#xA;    WHEN City = 'ELBURN' THEN 'Keslinger Rd &amp; Main St'&#xD;&#xA;    WHEN City = 'NAPERVILLE' THEN '75th St &amp; Washington St'&#xD;&#xA;    WHEN City = 'BOLINGBROOK' THEN 'Boughton Rd &amp; Weber Rd'&#xD;&#xA;    WHEN City = 'ROMEOVILLE' THEN 'Weber Rd &amp; Normantown Rd'&#xD;&#xA;    WHEN City = 'LEMONT' THEN 'State St &amp; Illinois St'&#xD;&#xA;    WHEN City = 'NEW LENOX' THEN 'Lincoln Hwy &amp; Cedar Rd'&#xD;&#xA;    WHEN City = 'FRANKFORT' THEN 'LaGrange Rd &amp; Nebraska St'&#xD;&#xA;    WHEN City = 'MOKENA' THEN 'LaGrange Rd &amp; 191st St'&#xD;&#xA;    WHEN City = 'ORLAND PARK' THEN '159th St &amp; LaGrange Rd'&#xD;&#xA;    WHEN City = 'CRESTWOOD' THEN 'Cicero Ave &amp; Cal Sag Rd'&#xD;&#xA;    WHEN City = 'ALSIP' THEN 'Pulaski Rd &amp; 127th St'&#xD;&#xA;    WHEN City = 'EVERGREEN PARK' THEN '95th St &amp; Kedzie Ave'&#xD;&#xA;    WHEN City = 'CHICAGO HEIGHTS' THEN 'Lincoln Hwy &amp; Dixie Hwy'&#xD;&#xA;    WHEN City = 'SOUTH HOLLAND' THEN '159th St &amp; South Park Ave'&#xD;&#xA;    WHEN City = 'HOMEWOOD' THEN 'Halsted St &amp; Ridge Rd'&#xD;&#xA;    WHEN City = 'FLOSSMOOR' THEN 'Flossmoor Rd &amp; Kedzie Ave'&#xD;&#xA;    WHEN City = 'COUNTRY CLUB HILLS' THEN '183rd St &amp; Pulaski Rd'&#xD;&#xA;    WHEN City = 'MARKHAM' THEN '159th St &amp; Kedzie Ave'&#xD;&#xA;    WHEN City = 'DOLTON' THEN 'Sibley Blvd &amp; Lincoln Ave'&#xD;&#xA;    ELSE 'Main St &amp; Park Ave'&#xD;&#xA;END">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="32" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_DimPerson" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="531c4cdf-ed7b-4576-a981-42c3b3afe45f" msprop:FriendlyName="DimPerson" msprop:TableType="Table" msprop:DbTableName="DimPerson">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Person_ID" msprop:FriendlyName="Person_ID" msprop:DbColumnName="Person_ID" msprop:design-time-name="4cba57a0-e99e-48e8-be93-b39f8079b3b1">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age" msprop:FriendlyName="Age" msprop:DbColumnName="Age" msprop:design-time-name="163b993e-0351-454c-a8db-484816850432" type="xs:int" minOccurs="0" />
+                  <xs:element name="Age_Group" msprop:FriendlyName="Age_Group" msprop:DbColumnName="Age_Group" msprop:design-time-name="aed6ba66-b0eb-47fa-9359-6cc969612ab3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Role" msprop:FriendlyName="Role" msprop:DbColumnName="Role" msprop:design-time-name="6be8e31c-6fe7-4b14-9e8a-0b683d49e614" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Injury_Classification" msprop:FriendlyName="Injury_Classification" msprop:DbColumnName="Injury_Classification" msprop:design-time-name="7cfbe2fc-4711-4ebc-b824-35cfd494eb7a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_DimVehicle" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="06241068-352b-4e06-b37d-17556425546d" msprop:FriendlyName="DimVehicle" msprop:TableType="Table" msprop:DbTableName="DimVehicle">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Vehicle_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Vehicle_ID" msprop:DbColumnName="Vehicle_ID" msprop:design-time-name="ad4c2287-81c4-4b68-9d3a-ecbdc8d39f67" type="xs:int" />
+                  <xs:element name="Make" msprop:FriendlyName="Make" msprop:DbColumnName="Make" msprop:design-time-name="6de3ba2e-4770-4617-8e01-433289eedf00" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Model" msprop:FriendlyName="Model" msprop:DbColumnName="Model" msprop:design-time-name="f6344491-8f0b-4b12-b8ec-24ff1176b775" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="54ed1cee-2630-4407-b9ad-98226d0c55b4" type="xs:int" minOccurs="0" />
+                  <xs:element name="Defects" msprop:FriendlyName="Defects" msprop:DbColumnName="Defects" msprop:design-time-name="408eafb4-e308-457b-9bcb-cce37fd0fc5f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Vehicle_Type" msprop:FriendlyName="Vehicle_Type" msprop:DbColumnName="Vehicle_Type" msprop:design-time-name="058180ed-9bb8-475d-a5da-8581a26e0094" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_DimWeather" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="585f8ec5-9aa7-4381-99a0-31b88e6b3aa2" msprop:FriendlyName="DimWeather" msprop:TableType="Table" msprop:DbTableName="DimWeather">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Weather_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Weather_ID" msprop:DbColumnName="Weather_ID" msprop:design-time-name="b0125c39-5b34-4994-8409-03695b163fbf" type="xs:int" />
+                  <xs:element name="Weather_Condition" msprop:FriendlyName="Weather_Condition" msprop:DbColumnName="Weather_Condition" msprop:design-time-name="a8136d51-3245-4d36-b45f-51323fc77237" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Visibility_Condition" msprop:FriendlyName="Visibility_Condition" msprop:DbColumnName="Visibility_Condition" msprop:design-time-name="0bd23992-985a-47cc-a317-5474a13895b9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Group_ID_7_FactCrash" msprop:DbSchemaName="Group_ID_7" msprop:design-time-name="b5c51828-6544-4025-b47b-6f3727a8f47b" msprop:FriendlyName="FactCrash" msprop:TableType="Table" msprop:DbTableName="FactCrash">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Crash_Detail_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Crash_Detail_ID" msprop:DbColumnName="Crash_Detail_ID" msprop:design-time-name="9e78c16a-5337-433d-ade9-80749ed66d37" type="xs:int" />
+                  <xs:element name="Damage_Amount" msprop:FriendlyName="Damage_Amount" msprop:DbColumnName="Damage_Amount" msprop:design-time-name="d9e62bda-be3b-4b34-b564-e503dbb77a7c" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="num_units" msprop:FriendlyName="num_units" msprop:DbColumnName="num_units" msprop:design-time-name="eee8adb5-9baa-4f84-b847-647c721f0b31" type="xs:int" minOccurs="0" />
+                  <xs:element name="Incident_Severity" msprop:FriendlyName="Incident_Severity" msprop:DbColumnName="Incident_Severity" msprop:design-time-name="120e89f2-026b-44f2-b018-73ddbd0cbf31" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Participant_Count" msprop:FriendlyName="Participant_Count" msprop:DbColumnName="Participant_Count" msprop:design-time-name="0132f5ec-a6e7-4d57-afb5-b4c8b55a65ad" type="xs:int" minOccurs="0" />
+                  <xs:element name="Weather_ID" msprop:FriendlyName="Weather_ID" msprop:DbColumnName="Weather_ID" msprop:design-time-name="d46930d7-395a-47c1-b929-aff705cd8c77" type="xs:int" minOccurs="0" />
+                  <xs:element name="Vehicle_ID" msprop:FriendlyName="Vehicle_ID" msprop:DbColumnName="Vehicle_ID" msprop:design-time-name="5ca7371c-84e8-469d-9924-aafc0899d6eb" type="xs:int" minOccurs="0" />
+                  <xs:element name="Date_ID" msprop:FriendlyName="Date_ID" msprop:DbColumnName="Date_ID" msprop:design-time-name="f18a4b10-15d7-46ec-aac3-cd2f36511782" type="xs:int" minOccurs="0" />
+                  <xs:element name="Person_ID" msprop:FriendlyName="Person_ID" msprop:DbColumnName="Person_ID" msprop:design-time-name="2ab595d0-0551-49fa-9aaa-a0abfb80e92b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Geography_ID" msprop:FriendlyName="Geography_ID" msprop:DbColumnName="Geography_ID" msprop:design-time-name="f0cf8c9c-81e6-4c60-9248-232572f4dc19" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cause_ID" msprop:FriendlyName="Cause_ID" msprop:DbColumnName="Cause_ID" msprop:design-time-name="225189ce-a01d-4c37-8b33-22284cb71625" type="xs:int" minOccurs="0" />
+                  <xs:element name="Crash_ID" msprop:FriendlyName="Crash_ID" msprop:DbColumnName="Crash_ID" msprop:design-time-name="89eb56d8-4f7d-4a90-9ccb-32b659d37324" type="xs:int" minOccurs="0" />
+                  <xs:element name="Primary_Cause_ID" msdata:ReadOnly="true" msprop:DbColumnName="Primary_Cause_ID" msprop:IsLogical="True" msprop:design-time-name="7643a27d-c29e-4f95-91d6-22eaf2101671" msprop:Description="Adding Primary Cause based on Human Nature" msprop:ComputedColumnExpression="CASE&#xD;&#xA;    WHEN Cause_ID IN (2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 21, 22, 23, 29, 30, 31, 35) THEN Cause_ID&#xD;&#xA;    ELSE NULL&#xD;&#xA;END" type="xs:int" minOccurs="0" />
+                  <xs:element name="Secondary_Cause_ID" msdata:ReadOnly="true" msprop:DbColumnName="Secondary_Cause_ID" msprop:IsLogical="True" msprop:design-time-name="89a63462-871e-465b-b2b1-f36b48276051" msprop:Description="Based on cause description, I added Environmental or supporting causes as Secondary Cause IDs" msprop:ComputedColumnExpression="CASE&#xD;&#xA;    WHEN Cause_ID IN (1, 7, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 32, 33, 34, 36, 37, 38) THEN Cause_ID&#xD;&#xA;    ELSE NULL&#xD;&#xA;END" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimCause" />
+          <xs:field xpath="Cause_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_DimCrash_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimCrash" />
+          <xs:field xpath="Crash_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimDate" />
+          <xs:field xpath="Date_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_DimGeography_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimGeography" />
+          <xs:field xpath="Geography_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_DimPerson_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimPerson" />
+          <xs:field xpath="Person_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_DimVehicle_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimVehicle" />
+          <xs:field xpath="Vehicle_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_DimWeather_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_DimWeather" />
+          <xs:field xpath="Weather_ID" />
+        </xs:unique>
+        <xs:unique name="Group_ID_7_FactCrash_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Crash_Detail_ID" />
+        </xs:unique>
+        <xs:keyref name="FK__FactCrash__Crash__4E53A1AA" refer="Group_ID_7_DimCrash_Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Crash_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrash__Vehic__5224328E" refer="Group_ID_7_DimVehicle_Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Vehicle_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrash__Date___4F47C5E3" refer="Group_ID_7_DimDate_Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Date_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrash__Weath__2DE6D218" refer="Group_ID_7_DimWeather_Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Weather_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrash__Geogr__503BEA1C" refer="Group_ID_7_DimGeography_Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Geography_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrash__Cause__4D5F7D71" refer="Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Cause_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCrash__Perso__51300E55" refer="Group_ID_7_DimPerson_Constraint1">
+          <xs:selector xpath=".//Group_ID_7_FactCrash" />
+          <xs:field xpath="Person_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Schema xmlns="" />
+  </Schema>
+</DataSourceView>

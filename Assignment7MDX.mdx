@@ -1,0 +1,80 @@
+-- Trend of Total Damage Costs by Vehicle Type and Crash Severity over Time
+//WITH 
+//MEMBER [Measures].[Total Damage Cost] AS 
+//    SUM(
+//        [Dim Vehicle].[Vehicle Type].Members, 
+//        [Measures].[Damage Amount]
+//    )
+//
+//SELECT 
+//    {
+//        [Measures].[Total Damage Cost]
+//    } ON COLUMNS,
+//    {
+//        [Dim Date].[Date Hierarchy].[Year].Members *
+//        [Dim Vehicle].[Vehicle Type].Members *
+//        [Dim Cause].[Cause Description].Members
+//    } ON ROWS
+//FROM [Cube]
+
+
+-- Average Damage Cost by Weather Condition and Crash Severity
+//WITH 
+//MEMBER [Measures].[Average Damage Cost] AS 
+//    AVG(
+//        [Dim Weather].[Weather Condition].Members, 
+//        [Measures].[Damage Amount]
+//    )
+//
+//SELECT 
+//    {
+//        [Measures].[Average Damage Cost]
+//    } ON COLUMNS,
+//    {
+//        [Dim Date].[Date Hierarchy].[Year].Members *
+//        [Dim Weather].[Weather Condition].Members *
+//        [Dim Cause].[Cause Description].Members
+//    } ON ROWS
+//FROM [Cube]
+
+-- Injury Classification by Vehicle Type
+//WITH 
+//MEMBER [Measures].[Injury Count] AS 
+//    COUNT(
+//        [Dim Person].[Injury Classification].Members
+//    )
+//
+//SELECT 
+//    {
+//        [Measures].[Injury Count]
+//    } ON COLUMNS,
+//    {
+//        [Dim Vehicle].[Vehicle Type].Members *
+//        [Dim Person].[Injury Classification].Members
+//    } ON ROWS
+//FROM [Cube]
+
+
+-- Crash Severity by Vehicle Type 
+
+WITH 
+MEMBER [Measures].[Damage Severity] AS 
+    SUM(
+        [Dim Vehicle].[Vehicle Type].Members, 
+        [Measures].[Damage Amount]
+    )
+
+SELECT 
+    {
+        [Measures].[Damage Severity]
+    } ON COLUMNS,
+    NON EMPTY(
+        [Dim Vehicle].[Vehicle Type].Members *
+        [Dim Geography].[City].Members
+    ) ON ROWS
+FROM [Cube]
+WHERE ([Dim Date].[Date Hierarchy].[Year].&[2019])  -- Filtering on a specific year 
+
+
+
+

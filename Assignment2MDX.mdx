@@ -1,0 +1,8 @@
+-- Assignment 2* MDX Query Solution
+SELECT 
+    { [Measures].[Damage Amount] } ON COLUMNS,  -- Total Damage Costs 
+    { 
+        [Dim Date].[Date Hierarchy].[Month].Members * 
+        [Dim Geography].[Geography Hierarchy].[State].Members  --for location I put City and State
+    } ON ROWS
+FROM [Cube]

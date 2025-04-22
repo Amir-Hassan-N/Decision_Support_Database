@@ -1,0 +1,16 @@
+-- Assignment 3* MDX Query Solution
+WITH MEMBER [Measures].[Damage Per Participant] AS
+    IIF([Measures].[Participant Count] > 0,
+        [Measures].[Damage Amount] / [Measures].[Participant Count],
+        NULL)
+
+MEMBER [Measures].[Average Yearly Damage] AS
+    AVG(
+        [Dim Crash].[Crash ID].Members,
+        [Measures].[Damage Amount]
+    )
+
+SELECT 
+    { [Measures].[Average Yearly Damage] } ON COLUMNS,
+    { [Dim Date].[Date Hierarchy].[Year].Members } ON ROWS
+FROM [Cube]

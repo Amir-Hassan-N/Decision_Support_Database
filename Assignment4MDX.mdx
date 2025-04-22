@@ -1,0 +1,34 @@
+-- Assignment 4 MDX Query
+WITH 
+-- Fetch damage cost for the previous year
+MEMBER [Measures].[PrevYearDamageCost] AS
+    ([Dim Date].[Year].CURRENTMEMBER.PREVMEMBER, [Measures].[Damage Amount])
+
+-- Calculate the difference in damage cost
+MEMBER [Measures].[DamageCostDifference] AS
+    [Measures].[Damage Amount] - [Measures].[PrevYearDamageCost]
+
+-- Calculate the percentage increase or decrease in damage cost
+MEMBER [Measures].[DamageCostPercentageChange] AS
+    IIF(
+        [Measures].[PrevYearDamageCost] > 0,
+        ([Measures].[Damage Amount] - [Measures].[PrevYearDamageCost]) / [Measures].[PrevYearDamageCost],
+        NULL
+    ),
+    FORMAT_STRING = '#.##%' -- % formatting that I set
+
+SELECT 
+{
+    [Measures].[Damage Amount],
+    [Measures].[PrevYearDamageCost],
+    [Measures].[DamageCostDifference],
+    [Measures].[DamageCostPercentageChange]
+} ON COLUMNS,
+NONEMPTY(
+    CROSSJOIN(
+        [Dim Geography].[City].MEMBERS,
+        [Dim Date].[Year].MEMBERS
+    ),
+    [Measures].[Damage Amount]
+) ON ROWS
+FROM [Cube]

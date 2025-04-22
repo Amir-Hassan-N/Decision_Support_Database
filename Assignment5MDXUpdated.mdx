@@ -1,0 +1,44 @@
+-- Assignment 5 MDX Query Updated Version
+WITH 
+-- Fetch previous year's value
+MEMBER [Measures].[PrevYearVehicles] AS
+    IIF(
+        NOT ISNULL([Dim Date].[Year].CURRENTMEMBER.PREVMEMBER),
+        ([Dim Date].[Year].CURRENTMEMBER.PREVMEMBER, [Measures].[Num Vehicles]),
+        NULL
+    )
+
+-- Calculate the difference
+MEMBER [Measures].[Difference] AS
+    IIF(
+        NOT ISNULL([Measures].[Num Vehicles]) AND NOT ISNULL([Measures].[PrevYearVehicles]),
+        [Measures].[Num Vehicles] - [Measures].[PrevYearVehicles],
+        NULL
+    )
+
+-- Calculate the percentage increase and format it correctly
+MEMBER [Measures].[VehicleIncreasePercent] AS
+    IIF(
+        [Measures].[PrevYearVehicles] > 0,
+        ([Measures].[Num Vehicles] - [Measures].[PrevYearVehicles]) / [Measures].[PrevYearVehicles],
+        NULL
+    ),
+    FORMAT_STRING = '#.##%'
+
+SELECT 
+{
+    [Measures].[Num Vehicles],
+    [Measures].[PrevYearVehicles],
+    [Measures].[Difference],
+    [Measures].[VehicleIncreasePercent]
+} ON COLUMNS,
+NONEMPTY(
+    FILTER(
+        CROSSJOIN(
+            [Dim Geography].[City].MEMBERS,
+            [Dim Date].[Year].MEMBERS
+        ),
+        [Measures].[VehicleIncreasePercent] > 0 -- Filter for positive percentage increases
+    )
+) ON ROWS
+FROM [Cube]

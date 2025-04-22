@@ -1,0 +1,20 @@
+-- Assignment 6 LDS 2024
+-- By Person ID
+/* WITH 
+    MEMBER [Measures].[Max Damage Person ID] AS
+        HEAD(
+            ORDER(
+                [Dim Person].[Person ID].MEMBERS,
+                [Measures].[Damage Amount],
+                BDESC
+            ),
+            1
+        ).ITEM(0).NAME
+SELECT 
+    {[Measures].[Damage Amount]} ON COLUMNS,
+    NONEMPTYCROSSJOIN(
+        [Dim Vehicle].[Vehicle Type].MEMBERS,
+        [Dim Date].[Year].MEMBERS
+    ) ON ROWS
+FROM [Cube] */
+
